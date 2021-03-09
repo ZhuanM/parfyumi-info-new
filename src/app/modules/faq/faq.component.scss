@@ -1,0 +1,32 @@
+.entirety {
+    background: url("../../../assets/images/pikwizard-5ea3346ab3f8e6af2acc1a6c764c6b55.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.faq-container {
+    max-width: 950px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid#666666;
+}
+
+#main-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.question {
+    font-family: 'Lobster', cursive;
+    color: dimgrey;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.answer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+}

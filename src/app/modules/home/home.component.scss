@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen {
+    background-image: url("../../../assets/images/bgimage.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: monospace;
+}
+
+#main-title {
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 70px;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero {
+    padding-top: 320px;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.1s;
+}
+
+.hero-expanded {
+    padding-top: 280px;
+}

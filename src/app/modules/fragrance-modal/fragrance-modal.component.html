@@ -1,0 +1,53 @@
+<!-- <div class="modal-header">
+  <h4 class="modal-title pull-left"><span class="title-text">{{fragrance.designer}} {{fragrance.name}}</span></h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7">
+        <img class="w-100 h-100" [src]="fragrance.image">
+      </div>
+      <div class="col-sm-5">
+        <div class="frag-name">
+          <span class="frag-description-type">Име: </span> <span class="frag-name-info">{{fragrance.name}}</span>
+        </div>
+        <div class="frag-designer">
+          <span class="frag-description-type">Дизайнер: </span> <span class="frag-designer-info">{{fragrance.designer}}</span>
+        </div>
+        <div class="frag-gender">
+          <span class="frag-description-type">Пол:</span> {{fragrance.gender == 'male' ? 'Мъж' : ''}}
+          {{fragrance.gender == 'female' ? 'Женa' : ''}}
+          {{fragrance.gender == 'unisex' ? 'Унисекс' : ''}}
+        </div>
+        <div class="frag-perfumer">
+          <span class="frag-description-type">
+            {{fragrance.perfumers.length > 1 ? 'Парфюмъри:' : 'Парфюмър:'}}
+          </span>
+        </div>
+        <div class="frag-perfumer-list" *ngFor="let perfumer of fragrance.perfumers">
+          <span class="frag-perfumers">{{perfumer}}</span>
+        </div>
+        <hr>
+        <div class="frag-notes">
+          <span class="frag-description-type">Връхни ноти:</span> <span class="frag-notes-info">{{fragrance.topNotes}}</span>
+          <br>
+          <span class="frag-description-type">Средни ноти:</span> <span class="frag-notes-info">{{fragrance.midNotes}}</span>
+          <br>
+          <span class="frag-description-type">Базови ноти:</span> <span class="frag-notes-info">{{fragrance.baseNotes}}</span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="frag-summary">
+        <span class="frag-description-type">Описание:</span> {{fragrance.summary}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+
+</div> -->

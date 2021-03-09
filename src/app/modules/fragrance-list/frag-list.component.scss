@@ -1,0 +1,73 @@
+.entirety {
+    background: url(../../../assets/images/bloom-blooming-bottle-965731.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#filter-container {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid#666666;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+
+#frags-container {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid#666666;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#filter-header {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 13px;
+}
+
+.custom-control {
+    display: block;
+}
+
+#gender {
+  margin-left: 20px;
+}
+
+#gender-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+}
+
+#gender-button-text {
+    font-family: 'Rubik', sans-serif;
+}
+
+.divider {
+    border-top: 2px solid #8c8b8b;
+}
+
+#designer {
+    margin-left: 20px;
+}
+
+#designer-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+}
+
+#designer-button-text {
+    font-family: 'Rubik', sans-serif;
+}
+
+#frags-header {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 13px;
+}
+
+.fragrances {
+    min-height: 782px;
+}
