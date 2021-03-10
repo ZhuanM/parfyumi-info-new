@@ -13,6 +13,7 @@ import { FragListComponent } from './modules/fragrance-list/frag-list.component'
 import { FragranceModalComponent } from './modules/fragrance-modal/fragrance-modal.component';
 import { FragranceComponent } from './modules/fragrance/fragrance.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
+import { ParfyumiCommonModule } from './modules/common/parfyumi-common.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { NotFoundComponent } from './modules/not-found/not-found.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    ParfyumiCommonModule,
     StoreModule.forRoot({}, {}),
     AppRoutingModule
   ],

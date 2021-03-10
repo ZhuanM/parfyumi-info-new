@@ -12,52 +12,6 @@ const routes: Routes = [
   { path: 'frag-list', component: FragListComponent },
   { path: 'faq', component: FaqComponent },
   { path: '**', component: NotFoundComponent }
-
-  // const routes: Routes = [
-  //   {
-  //     path: '', component: MainComponent, children: [
-  //       { 
-  //         path: 'home', 
-  //         loadChildren: () => import('../home/home.module').then(m => m.HomeModule),
-  //         data: {
-  //           key: "home"
-  //         }
-  //       },
-  //       { 
-  //         path: 'explore', 
-  //         loadChildren: () => import('../explore/explore.module').then(m => m.ExploreModule),
-  //         data: {
-  //           key: "explore",
-  //         }
-  //       },
-  //       { 
-  //         path: 'jobs', 
-  //         loadChildren: () => import('../jobs/jobs.module').then(m => m.JobsModule),
-  //         data: {
-  //           key: "jobs",
-  //         }
-  //       },
-  //       { path: 'profile', canActivate: [AuthGuard], loadChildren: () => import('../profile/profile.module').then(m => m.ProfileModule),},
-  //       { path: 'custom-search', loadChildren: () => import('../custom-search-form/custom-search-form.module').then(m => m.CustomSearchFormModule)},
-  //       { 
-  //         path: 'course', 
-  //         loadChildren: () => import('../course/course.module').then(m => m.CourseModule),
-  //         data: {
-  //           key: "course"
-  //         }
-  //       },
-  //       { 
-  //         path: 'job-info', 
-  //         loadChildren: () => import('../job-info/job-info.module').then(m => m.JobInfoModule),
-  //         data: {
-  //           key: "job-info"
-  //         }
-  //       },
-  //       { path: '', redirectTo: 'home', pathMatch: 'full' },
-  //     ]
-  //   },
-  // ];
-  
 ];
 
 @NgModule({
