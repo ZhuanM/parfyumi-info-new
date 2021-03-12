@@ -2,13 +2,31 @@
     height: 55px;
 }
 
+.transparency {
+    // background: transparent !important;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+    z-index: 99;
+}
+
+.bg-dark {
+    background-color: transparent !important;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .navbar-brand {
     font-family: 'Petit Formal Script', cursive;
-    font-size:25px;
+    font-size: 25px;
 }
 
 .dropdown-menu {
-    top:35px;
+    top: 35px;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -16,5 +34,15 @@
 }
 
 #navbarSupportedContent {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Comfortaa', cursive;
+}
+
+@media only screen and (max-width: 991px) {
+    .bg-dark {
+        background-color: #343a40 !important;
+    }
+
+    .transparency {
+        background-image: none !important;
+    }
 }

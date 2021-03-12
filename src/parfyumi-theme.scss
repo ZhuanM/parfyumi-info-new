@@ -1,0 +1,89 @@
+// @import "~@angular/material/theming";
+
+// $custom-typography: mat-typography-config(
+//     $font-family: '"Poppins", Helvetica, Arial, sans-serif;',
+// );
+// @include mat-core($custom-typography);
+
+// $parfyumi-pallete: (
+//     50: #e8f6f4,
+//     100: #c5e8e3,
+//     200: #9fd9d0,
+//     300: #79c9bd,
+//     400: #5cbeaf,
+//     500: #3fb2a1,
+//     600: #39ab99,
+//     700: #31a28f,
+//     800: #299985,
+//     900: #1b8a74,
+//     A100: #c3fff2,
+//     A200: #90ffe7,
+//     A400: #5dffdd,
+//     A700: #43ffd7,
+//     contrast: (
+//         50: #000000,
+//         100: #000000,
+//         200: #ffffff,
+//         300: #ffffff,
+//         400: #ffffff,
+//         500: #ffffff,
+//         600: #ffffff,
+//         700: #ffffff,
+//         800: #ffffff,
+//         900: #ffffff,
+//         A100: #000000,
+//         A200: #000000,
+//         A400: #ffffff,
+//         A700: #ffffff,
+//     ),
+// );
+
+// $secondary-pallete: (
+//     50: #e7efff,
+//     100: #c3d8ff,
+//     200: #9bbeff,
+//     300: #73a4ff,
+//     400: #5591ff,
+//     500: #377dff,
+//     600: #3175ff,
+//     700: #2a6aff,
+//     800: #2360ff,
+//     900: #164dff,
+//     A100: #ffffff,
+//     A200: #fcfcff,
+//     A400: #c9d4ff,
+//     A700: #afbfff,
+//     contrast: (
+//         50: #000000,
+//         100: #000000,
+//         200: #000000,
+//         300: #ffffff,
+//         400: #ffffff,
+//         500: #ffffff,
+//         600: #ffffff,
+//         700: #ffffff,
+//         800: #ffffff,
+//         900: #ffffff,
+//         A100: #000000,
+//         A200: #000000,
+//         A400: #000000,
+//         A700: #ffffff,
+//     ),
+// );
+
+// $parfyumi-app-primary: mat-palette($parfyumi-pallete, 500);
+// $parfyumi-app-accent: mat-palette($secondary-pallete, 500);
+
+// $parfyumi-app-warn: mat-palette($mat-red);
+
+// $parfyumi-app-theme: mat-light-theme(
+//     (
+//         color: (
+//             primary: $parfyumi-app-primary,
+//             accent: $parfyumi-app-accent,
+//             warn: $parfyumi-app-warn,
+//         ),
+//     )
+// );
+
+// @include angular-material-theme($parfyumi-app-theme);

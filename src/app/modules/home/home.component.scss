@@ -5,13 +5,13 @@
 
 .main-screen {
     background-image: url("../../../assets/images/bgimage.jpg");
-    height: 100vh;
+    min-height: calc(100vh - 40px);
     background-size: cover;
     background-position: center;
     font-family: monospace;
 }
 
-#main-title {
+.main-title {
     color: white;
     font-family: 'Pattaya', sans-serif;
     font-size: 70px;

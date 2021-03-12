@@ -2,15 +2,25 @@ footer {
     background-color: #333;
     overflow: auto;
     color: #fff;
-    width: 100%;
-  }
+}
 
 .footer-wrapper {
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
-#copyright {
-    margin-top: 10px;
-    text-align: center;
+.copyright {
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-media-icons:hover {
+    opacity: 0.5;
+}
+
+.social-media-icons {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
 }

@@ -2,6 +2,7 @@
     background: url("../../../assets/images/pikwizard-5ea3346ab3f8e6af2acc1a6c764c6b55.jpg");
     background-size: cover;
     background-position: center;
+    min-height: calc(100vh - 40px);
 }
 
 .faq-container {
@@ -9,24 +10,71 @@
     background-color: white;
     border-radius: 25px;
     border: 2px solid#666666;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 
-#main-title {
+.main-title {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 35px;
     margin-left: 15px;
-    margin-top: 5px;
-    font-style: italic;
+    color: #626971;
 }
 
 .question {
     font-family: 'Lobster', cursive;
-    color: dimgrey;
-    margin-left: 15px;
-    margin-top: 5px;
+    color: #626971;
+    font-size: 22px;
 }
 
 .answer {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #35353c;
+}
+
+.panel-width {
+    width: 95%;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .main-title {
+        font-size: 25px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    .answer {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-title {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 12px;
+    }
+
+    .answer {
+        font-size: 10px;
+    }
 }

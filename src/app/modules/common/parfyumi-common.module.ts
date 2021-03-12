@@ -30,7 +30,6 @@ const imported = [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
     MatMenuModule,
     MatButtonModule,
     MatCardModule,
