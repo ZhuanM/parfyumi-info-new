@@ -1,21 +1,84 @@
 // @import "./parfyumi-theme.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
-// @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans+Condensed&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans+Condensed&display=swap');
 
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.modal-dialog {
-    margin-top: 140px !important;
-    max-width: 600px !important;
-}
+// .modal-dialog {
+//     margin-top: 140px !important;
+//     max-width: 600px !important;
+// }
 
-.modal-content {
-    border-radius: 20px !important;
-}
+// .modal-content {
+//     border-radius: 20px !important;
+// }
 
 .drag-to-navbar {
     margin-top: -81px !important;
+}
+
+.fs-10px {
+    font-size: 10px;
+}
+
+.fs-12px {
+    font-size: 12px;
+}
+
+.fs-14px {
+    font-size: 14px;
+}
+
+.fs-16px {
+    font-size: 16px;
+}
+
+.fs-18px {
+    font-size: 18px;
+}
+
+.fs-20px {
+    font-size: 20px;
+}
+
+app-footer {
+    .signup-input .mat-form-field-flex {
+        padding: 0 0 0 0 !important;
+    }
+    
+    .signup-input .mat-form-field-infix {
+        padding: 0 0 0 0 !important;
+        border-top: none !important;
+    }
+    
+    .signup-icon-input {
+        display: block;
+    }
+    
+    .signup-icon {
+        color: #333333;
+    }
+    
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        background: white;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .mat-form-field-wrapper:hover {
+        // cursor: pointer !important;
+    }
+    
+    .mat-form-field-underline {
+        display: none !important;
+    }
+    
+    .mat-form-field-wrapper {
+        padding: 0 !important;
+    }
+
+    .mat-form-field {
+        color: black;
+    }
 }

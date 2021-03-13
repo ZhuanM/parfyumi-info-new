@@ -4,13 +4,19 @@ footer {
     color: #fff;
 }
 
-.footer-wrapper {
-    margin: 0 auto;
+a {
+    color: inherit;
 }
 
-.copyright {
+.copyright-text {
     font-family: 'Petit Formal Script', cursive;
     font-size: 15px;
+}
+
+.privacy-text {
+    color: #bab9b9;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .social-media-icons:hover {
@@ -22,6 +28,74 @@ footer {
     cursor: pointer;
 }
 
-a {
-    color: inherit;
+.signup-input {
+    width: 20%;
+}
+
+.signup-input-text {
+    padding-top: 1px;
+}
+
+.signup-button {
+    border-radius: 0 !important;
+    background-color: #ff5100ed;
+    color: white;
+}
+
+@media only screen and (max-width: 1825px) {
+    .signup-input-text::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .signup-input {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .signup-input-text {
+        padding-top: 0px;
+    }
+
+    .signup-icon {
+        padding-right: 0.25rem;
+    }
+
+    .signup-input-text::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .signup-input {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .signup-input {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .signup-input {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .signup-input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .signup-input {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .signup-input {
+        width: 100%;
+    }
 }

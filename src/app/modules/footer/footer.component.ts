@@ -10,4 +10,7 @@ export class FooterComponent {
   
   constructor() { }
 
+  public signUp(email) {
+    console.log(email);
+  }
 }

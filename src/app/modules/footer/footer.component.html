@@ -1,5 +1,5 @@
 <footer>
-    <div class="row ml-0 mr-0 mt-3 justify-content-center">
+    <div class="row ml-0 mr-0 mt-2 justify-content-center">
         <div class="col-auto d-flex align-items-center">
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
                 <i class="fab fa-facebook social-media-icons pointer"></i>
@@ -21,10 +21,28 @@
             </a>
         </div>
     </div>
-    <div class="row m-0 my-3">
+    <div class="row ml-0 mr-0 mt-2">
         <div class="col d-flex justify-content-center align-items-center">
-            <div class="footer-wrapper">
-                <div class="copyright">@Parfyumi.info</div>       
+            <mat-form-field appearance="fill" class="signup-icon-input signup-input">
+                <div class="row m-0">
+                    <span class="col-auto d-flex align-items-center pl-2 text-right material-icons signup-icon">feed</span>
+                    <input class="col signup-input-text" matInput #queryInput placeholder="Запишете се за бюлетина" (change)="signUp(queryInput.value)">
+                    <button class="col-auto signup-button" mat-button matSuffix mat-stroked-button aria-label="search">
+                        ЗАПИСВАНЕ
+                    </button>
+                </div>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row m-0 my-2">
+        <div class="col pr-0 pl-5 d-flex justify-content-center align-items-center">
+            <div class="copyright-text ml-5"><span class="fs-18px">©</span> Parfyumi.info</div>       
+        </div>
+        <div class="col-auto d-flex justify-content-center align-items-center">
+            <div class="privacy-text">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.privacypolicygenerator.info/live.php?token=DWb0dPf2lrfIEp7gu9TX9HvDAkWm53DA">
+                    Privacy Policy
+                </a>
             </div>
         </div>
     </div>
