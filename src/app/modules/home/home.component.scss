@@ -1,40 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .main-screen {
     background-image: url("../../../assets/images/bgimage.jpg");
     min-height: calc(100vh - 40px);
     background-size: cover;
     background-position: center;
-    font-family: monospace;
+    background-attachment: fixed;
 }
 
 .main-title {
     color: white;
     font-family: 'Pattaya', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
 }
 
-.btn {
-    border: 1px solid white;
-    padding: 10px 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    text-transform: uppercase;
-    background-color: darkorange;
-    font-family: "Roboto", sans-serif;
-}
-
-.hero {
-    padding-top: 320px;
-    margin: 0 auto;
-    text-align: center;
-    transition: 0.1s;
-}
-
-.hero-expanded {
+.title-wrapper {
     padding-top: 280px;
+    text-align: center;
 }
+
+.second-view {
+    height: 400px;
+    width: 100%;
+    // FOR TRANSPARENT BLACK
+    // background-color: rgb(0 0 0 / 54%);
+    background-color: #f4f4f4;
+}
+
+.info-card {
+    border: 1px solid black;
+} 
