@@ -1,14 +1,13 @@
-a {
-    color: inherit;
-}
-
-#fragrance-container {
-    height:250px;
+.fragrance-container {
+    height: 280px;
     width: 200px;
     border: 1px solid #666666;
     border-radius: 25px;
-    display: inline-table;
     margin: 10px 10px;
+}
+
+.fragrance-container:hover {
+    box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 10%);
 }
 
 img {

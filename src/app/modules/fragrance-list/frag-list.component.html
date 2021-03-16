@@ -42,7 +42,7 @@
             <fragrance class="d-inline-block" *ngFor="let frag of visibleFrags" 
               [fragInfo]="frag" (click)="openModal(frag)"></fragrance>
           </div>
-          <div class="paginator">
+          <div class="paginator-wrapper">
             <p-paginator [rows]="12" [totalRecords]="filteredFrags.length" 
               (onPageChange)="paginate($event)" #paginator></p-paginator>
           </div>

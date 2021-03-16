@@ -1,8 +1,6 @@
-<a target="_blank" rel="noopener noreferrer" class="pointer">
-  <div id="fragrance-container">
-    <img [src]="fragInfo.image">
-    <h1>{{fragInfo.name}}</h1>
-    <h2>{{fragInfo.designer}}</h2>
-    <h3 #genderInfo>{{fragInfo.gender | titlecase}}</h3>
-  </div>
-</a>
+<div class="fragrance-container pointer">
+  <img [src]="fragInfo.image">
+  <h1>{{fragInfo.name}}</h1>
+  <h2>{{fragInfo.designer}}</h2>
+  <h3>{{fragInfo.gender | titlecase}}</h3>
+</div>
