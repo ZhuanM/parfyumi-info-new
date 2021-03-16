@@ -46,6 +46,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 frag-list {
+    // PRIMENG PAGINATOR
     .p-paginator {
         border-radius: 0 0 25px 25px;
         padding-top: 5px;
@@ -65,6 +66,16 @@ frag-list {
     .p-paginator .p-paginator-next,
     .p-paginator .p-paginator-last {
         border-radius: 50%;
+    }
+
+    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+        background: #ff4081;
+        border-color: #ff4081;
+    }
+
+    // MATERIAL
+    .mat-radio-button {
+        font-family: 'Montserrat Alternates';
     }
 }
 
