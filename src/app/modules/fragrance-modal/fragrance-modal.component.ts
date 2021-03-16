@@ -8,9 +8,7 @@ import { Fragrance } from '../common/models/fragrance/fragrance';
   styleUrls: ['./fragrance-modal.component.scss']
 })
 export class FragranceModalComponent {
-
   public fragrance: Fragrance;
 
   constructor(public bsModalRef: BsModalRef) { }
-
 }

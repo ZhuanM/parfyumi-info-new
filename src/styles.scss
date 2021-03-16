@@ -6,7 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .modal-dialog {
     margin-top: 140px !important;
-    max-width: 600px !important;
+    max-width: 623px !important;
 }
 
 .modal-content {
@@ -76,6 +76,12 @@ frag-list {
     // MATERIAL
     .mat-radio-button {
         font-family: 'Montserrat Alternates';
+    }
+}
+
+fragrance-modal {
+    .mat-raised-button.mat-primary {
+        background-color: #ff4081e6;
     }
 }
 

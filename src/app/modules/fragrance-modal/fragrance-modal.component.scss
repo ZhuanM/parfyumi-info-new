@@ -1,6 +1,7 @@
 .frag-description-type {
     font-family: 'Montserrat Alternates', sans-serif;
     display: block;
+    font-weight: bold;
 }
 
 .frag-summary {
@@ -14,18 +15,34 @@
     font-size: 15px;
 }
 
-.frag-perfumers {
+.ff-exo-2 {
     font-family: 'Exo 2', sans-serif;
 }
 
-.frag-designer-info {
-    font-family: 'Exo 2', sans-serif;
+.custom-divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.frag-name-info {
-    font-family: 'Exo 2', sans-serif;
+.title-text {
+    font-size: 21px;
+    font-family: 'Petit Formal Script';
+    font-weight: bold;
 }
 
-.frag-notes-info {
-    font-style: italic;
+.exit-button {
+    cursor: pointer;
+    background-image: url("../../../assets/images/icons/close.svg");
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-right: 5px;
+    background-size: cover;
+    position: absolute;
+    right: -15px;
+    top: -12px;
+}
+
+.button-text {
+    font-family: 'Montserrat';
 }

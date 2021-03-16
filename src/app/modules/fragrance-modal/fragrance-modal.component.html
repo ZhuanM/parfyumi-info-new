@@ -1,8 +1,6 @@
-<div class="modal-header">
-  <h4 class="modal-title pull-left"><span class="title-text">{{fragrance.designer}} {{fragrance.name}}</span></h4>
-  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
-    <span aria-hidden="true">&times;</span>
-  </button>
+<i class="exit-button" data-dismiss="modal" aria-label="Close" (click)="bsModalRef.hide()"></i>
+<div class="modal-header justify-content-center">
+  <div class="title-text">{{fragrance.designer}} {{fragrance.name}}</div>
 </div>
 <div class="modal-body">
   <div class="container-fluid">
@@ -12,34 +10,35 @@
       </div>
       <div class="col-sm-5">
         <div class="frag-name">
-          <span class="frag-description-type">Име: </span> <span class="frag-name-info">{{fragrance.name}}</span>
+          <span class="frag-description-type">Име: </span> <span class="ff-exo-2">{{fragrance.name}}</span>
         </div>
-        <hr>
+        <hr class="custom-divider">
         <div class="frag-designer">
-          <span class="frag-description-type">Дизайнер: </span> <span class="frag-designer-info">{{fragrance.designer}}</span>
+          <span class="frag-description-type">Дизайнер: </span> <span class="ff-exo-2">{{fragrance.designer}}</span>
         </div>
-        <hr>
+        <hr class="custom-divider">
         <div class="frag-gender">
-          <span class="frag-description-type">Пол:</span> {{fragrance.gender == 'male' ? 'Мъж' : ''}}
+          <span class="frag-description-type">Пол:</span>
+          {{fragrance.gender == 'male' ? 'Мъж' : ''}}
           {{fragrance.gender == 'female' ? 'Женa' : ''}}
           {{fragrance.gender == 'unisex' ? 'Унисекс' : ''}}
         </div>
-        <hr>
-        <div class="frag-perfumer">
+        <hr class="custom-divider">
+        <div class="ff-exo-2">
           <span class="frag-description-type">
             {{fragrance.perfumers.length > 1 ? 'Парфюмъри:' : 'Парфюмър:'}}
           </span>
         </div>
         <div class="frag-perfumer-list" *ngFor="let perfumer of fragrance.perfumers">
-          <span class="frag-perfumers">{{perfumer}}</span>
+          <span class="ff-exo-2">{{perfumer}}</span>
         </div>
-        <hr>
+        <hr class="custom-divider">
         <div class="frag-notes">
-          <span class="frag-description-type">Връхни ноти:</span> <span class="frag-notes-info">{{fragrance.topNotes}}</span>
+          <span class="frag-description-type">Връхни ноти:</span> <span class="font-italic">{{fragrance.topNotes}}</span>
           <br>
-          <span class="frag-description-type">Средни ноти:</span> <span class="frag-notes-info">{{fragrance.midNotes}}</span>
+          <span class="frag-description-type">Средни ноти:</span> <span class="font-italic">{{fragrance.midNotes}}</span>
           <br>
-          <span class="frag-description-type">Базови ноти:</span> <span class="frag-notes-info">{{fragrance.baseNotes}}</span>
+          <span class="frag-description-type">Базови ноти:</span> <span class="font-italic">{{fragrance.baseNotes}}</span>
         </div>
       </div>
     </div>
@@ -51,6 +50,10 @@
     </div>
   </div>
 </div>
-<div class="modal-footer">
-
+<div class="modal-footer justify-content-center py-2">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.notino.bg/">
+    <button mat-raised-button color="primary">
+      <span class="button-text">Намери парфюма</span>
+    </button>
+  </a>  
 </div>
