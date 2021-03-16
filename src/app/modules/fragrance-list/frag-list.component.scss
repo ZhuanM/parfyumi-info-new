@@ -1,71 +1,58 @@
 .entirety {
     background: url(../../../assets/images/bloom-blooming-bottle-965731.jpg);
+    min-height: calc(100vh - 40px);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
-#filter-container {
+.header-wrapper {
     background-color: white;
     border-radius: 25px;
     border: 2px solid#666666;
     margin-top: 50px;
-    padding-bottom: 15px;
+
+    &.filter {
+        padding-bottom: 15px;
+    }
+
+    &.frags {
+        margin-bottom: 50px;
+    }
 }
 
-#frags-container {
-    background-color: white;
-    border-radius: 25px;
-    border: 2px solid#666666;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#filter-header {
+.header-text {
     text-align: center;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     padding-top: 13px;
 }
 
-.custom-control {
-    display: block;
-}
-
-#gender {
-  margin-left: 20px;
-}
-
-#gender-title {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-}
-
-#gender-button-text {
+.radio-button-text {
     font-family: 'Rubik', sans-serif;
 }
 
-.divider {
+.main-padding {
+    padding-top: 80px;
+}
+
+.filter-radio-group {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-divider {
     border-top: 2px solid #8c8b8b;
 }
 
-#designer {
+.radio-wrapper {
     margin-left: 20px;
 }
 
-#designer-title {
+.radio-title {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
-}
-
-#designer-button-text {
-    font-family: 'Rubik', sans-serif;
-}
-
-#frags-header {
-    text-align: center;
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 13px;
 }
 
 .fragrances {

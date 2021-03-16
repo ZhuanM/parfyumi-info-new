@@ -4,17 +4,21 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-// .modal-dialog {
-//     margin-top: 140px !important;
-//     max-width: 600px !important;
-// }
+.modal-dialog {
+    margin-top: 140px !important;
+    max-width: 600px !important;
+}
 
-// .modal-content {
-//     border-radius: 20px !important;
-// }
+.modal-content {
+    border-radius: 20px !important;
+}
 
 .drag-to-navbar {
     margin-top: -81px !important;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .fs-10px {
@@ -41,6 +45,29 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 20px;
 }
 
+frag-list {
+    .p-paginator {
+        border-radius: 0 0 25px 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-width: 1px 0 0 0;
+        background-color: white;
+    }
+
+    .p-link:focus {
+        box-shadow: none;
+    }
+
+    .p-paginator .p-paginator-pages .p-paginator-page,
+    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight,
+    .p-paginator .p-paginator-first,
+    .p-paginator .p-paginator-prev,
+    .p-paginator .p-paginator-next,
+    .p-paginator .p-paginator-last {
+        border-radius: 50%;
+    }
+}
+
 app-footer {
     .signup-input .mat-form-field-flex {
         padding: 0 0 0 0 !important;
@@ -64,9 +91,9 @@ app-footer {
         border-radius: 6px;
     }
     
-    .mat-form-field-wrapper:hover {
-        // cursor: pointer !important;
-    }
+    // .mat-form-field-wrapper:hover {
+    //     cursor: pointer !important;
+    // }
     
     .mat-form-field-underline {
         display: none !important;

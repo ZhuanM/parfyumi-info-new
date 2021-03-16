@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-// import { Fragrance } from '../models/fragrance';
+import { Component, Input } from '@angular/core';
+import { Fragrance } from '../common/models/fragrance/fragrance';
 
 @Component({
   selector: 'fragrance',
@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./fragrance.component.scss']
 })
 export class FragranceComponent {
-  // @Input() fragInfo: Fragrance;
+  @Input() fragInfo: Fragrance;
   constructor() { }
 
 }

@@ -1,120 +1,53 @@
-<!-- <div class="entirety">
-  <div class="container">
+<div class="entirety drag-to-navbar">
+  <div class="container main-padding">
     <div class="row">
       <div class="col-md-4">
-        <div id="filter-container">
-          <header id="filter-header">
-            Филтър
-          </header>
-          <hr class="divider">
-          <div id="gender">
-            <span id="gender-title"><b>Пол:</b></span>
-            <div id="gender-button-text">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"
-                  value="allGenders" (click)="filterGender('')" checked="checked">
-                <label class="custom-control-label" for="customRadioInline1">Всички</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input"
-                  value="male" (click)="filterGender('male')">
-                <label class="custom-control-label" for="customRadioInline2">Мъже</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input"
-                  value="female" (click)="filterGender('female')">
-                <label class="custom-control-label" for="customRadioInline3">Жени</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input"
-                  value="unisex" (click)="filterGender('unisex')">
-                <label class="custom-control-label" for="customRadioInline4">Унисекс</label>
-              </div>
+        <div class="header-wrapper filter">
+          <div class="header-text">
+            Филтри
+          </div>
+          <hr class="custom-divider">
+          <div class="radio-wrapper">
+            <span class="radio-title"><b>Пол:</b></span>
+            <div class="radio-button-text">
+              <mat-radio-group aria-labelledby="fragrance-gender" class="filter-radio-group">
+                <mat-radio-button *ngFor="let gender of genderOptions" [value]="gender" 
+                  [checked]="gender.checked" (click)="filterGender(gender)">
+                  {{gender.name}}
+                </mat-radio-button>
+              </mat-radio-group>
             </div>
           </div>
           <hr>
-          <div id="designer">
-            <span id="designer-title"><b>Дизайнер:</b></span>
-            <div id="designer-button-text">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input"
-                  value="allDesigners" (click)="filterDesigner('')" checked="checked">
-                <label class="custom-control-label" for="customRadioInline5">Всички</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline6" name="customRadioInline2" class="custom-control-input"
-                  value="bvlgari" (click)="filterDesigner('Bvlgari')">
-                <label class="custom-control-label" for="customRadioInline6">Bvlgari</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline7" name="customRadioInline2" class="custom-control-input"
-                  value="calvinKlein" (click)="filterDesigner('Calvin Klein')">
-                <label class="custom-control-label" for="customRadioInline7">Calvin Klein</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline8" name="customRadioInline2" class="custom-control-input"
-                  value="carolinaHerrera" (click)="filterDesigner('Carolina Herrera')">
-                <label class="custom-control-label" for="customRadioInline8">Carolina Herrera</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline9" name="customRadioInline2" class="custom-control-input"
-                  value="chanel" (click)="filterDesigner('Chanel')">
-                <label class="custom-control-label" for="customRadioInline9">Chanel</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline10" name="customRadioInline2" class="custom-control-input"
-                  value="creed" (click)="filterDesigner('Creed')">
-                <label class="custom-control-label" for="customRadioInline10">Creed</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline11" name="customRadioInline2" class="custom-control-input"
-                  value="christianDior" (click)="filterDesigner('Christian Dior')">
-                <label class="custom-control-label" for="customRadioInline11">Christian Dior</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline12" name="customRadioInline2" class="custom-control-input"
-                  value="dolceGabbana" (click)="filterDesigner('Dolce & Gabbana')">
-                <label class="custom-control-label" for="customRadioInline12">Dolce & Gabbana</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline13" name="customRadioInline2" class="custom-control-input"
-                  value="giorgioArmani" (click)="filterDesigner('Giorgio Armani')">
-                <label class="custom-control-label" for="customRadioInline13">Giorgio Armani</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline14" name="customRadioInline2" class="custom-control-input"
-                  value="pacoRobbane" (click)="filterDesigner('Paco Rabanne')">
-                <label class="custom-control-label" for="customRadioInline14">Paco Rabanne</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline15" name="customRadioInline2" class="custom-control-input"
-                  value="tomFord" (click)="filterDesigner('Tom Ford')">
-                <label class="custom-control-label" for="customRadioInline15">Tom Ford</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline16" name="customRadioInline2" class="custom-control-input"
-                  value="yvesSaintLaurent" (click)="filterDesigner('Yves Saint Laurent')">
-                <label class="custom-control-label" for="customRadioInline16">Yves Saint Laurent</label>
-              </div>
+          <div class="radio-wrapper">
+            <span class="radio-title"><b>Дизайнер:</b></span>
+            <div class="radio-button-text">
+              <mat-radio-group aria-labelledby="fragrance-designer" class="filter-radio-group">
+                <mat-radio-button *ngFor="let designer of designerOptions" [value]="designer" 
+                  [checked]="designer.checked" (click)="filterDesigner(designer)">
+                  {{designer.name}}
+                </mat-radio-button>
+              </mat-radio-group>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-8">
-        <div id="frags-container" class="text-center">
-          <header id="frags-header">
+        <div class="header-wrapper frags text-center">
+          <div class="header-text">
             Лист с парфюми
-          </header>
-          <hr class="divider">
+          </div>
+          <hr class="custom-divider">
           <div class="fragrances">
-            <fragrance class="d-inline-block" *ngFor="let frag of visibleFrags" [fragInfo]="frag" (click)="openModal(frag)">
-            </fragrance>
+            <fragrance class="d-inline-block" *ngFor="let frag of visibleFrags" 
+              [fragInfo]="frag" (click)="openModal(frag)"></fragrance>
           </div>
           <div class="paginator">
-            <p-paginator [rows]="12" [totalRecords]="filteredFrags.length" (onPageChange)="paginate($event)" #paginator></p-paginator>
+            <p-paginator [rows]="12" [totalRecords]="filteredFrags.length" 
+              (onPageChange)="paginate($event)" #paginator></p-paginator>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div> -->
+</div>

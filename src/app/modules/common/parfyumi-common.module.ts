@@ -21,6 +21,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { PaginatorModule } from 'primeng/paginator';
 
 const appearance: MatFormFieldDefaultOptions = {
     appearance: 'outline'
@@ -49,6 +51,8 @@ const imported = [
     MatCheckboxModule,
     RouterModule,
     MatIconModule,
+    PaginatorModule,
+    ModalModule.forRoot(),
 ];
 
 const declarations = [ ];

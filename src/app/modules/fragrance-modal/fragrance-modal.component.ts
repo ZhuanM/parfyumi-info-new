@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-// import { Fragrance } from '../models/fragrance';
-// import { BsModalRef } from 'ngx-bootstrap/modal';
+import { Component } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
+import { Fragrance } from '../common/models/fragrance/fragrance';
 
 @Component({
   selector: 'fragrance-modal',
@@ -9,10 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FragranceModalComponent {
 
-  // public fragrance: Fragrance;
+  public fragrance: Fragrance;
 
-  // constructor(public bsModalRef: BsModalRef) { }
-  constructor() { }
-
+  constructor(public bsModalRef: BsModalRef) { }
 
 }
