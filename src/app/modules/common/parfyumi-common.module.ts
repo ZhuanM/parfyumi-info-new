@@ -23,6 +23,7 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PaginatorModule } from 'primeng/paginator';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 const appearance: MatFormFieldDefaultOptions = {
     appearance: 'outline'
@@ -53,6 +54,7 @@ const imported = [
     MatIconModule,
     PaginatorModule,
     ModalModule.forRoot(),
+    CarouselModule.forRoot(),
 ];
 
 const declarations = [ ];

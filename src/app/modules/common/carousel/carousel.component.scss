@@ -1,0 +1,20 @@
+.carousel-item {
+    height: 500px;
+}
+
+// .carousel-wrapper:focus {
+//     outline: none !important;
+// }
+
+// .item-active:focus {
+//     outline: none !important
+// }
+
+// .carousel-inner:focus {
+//     outline: none !important;
+// }
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}

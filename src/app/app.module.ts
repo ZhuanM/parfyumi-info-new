@@ -15,6 +15,7 @@ import { FragranceComponent } from './modules/fragrance/fragrance.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { ParfyumiCommonModule } from './modules/common/parfyumi-common.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ParfyumiCarouselComponent } from './modules/common/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FragranceComponent,
     FragranceModalComponent,
     FaqComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ParfyumiCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ParfyumiCommonModule,
     FontAwesomeModule,
     StoreModule.forRoot({}, {}),
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

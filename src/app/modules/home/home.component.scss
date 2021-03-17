@@ -121,6 +121,13 @@
     list-style-type: circle;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
+    color: #7b7b7b;
+}
+
+.third-view {
+    min-height: 500px;
+    width: 100%;
+    background-color: #fefefe;
 }
 
 @media only screen and (max-width: 1802px) {
