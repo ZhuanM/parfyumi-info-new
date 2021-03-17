@@ -1,6 +1,7 @@
-header {
+.not-found {
     background-image: url("../../../assets/images/404.png");
-    height: 100vh;
+    min-height: calc(100vh - 40px);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
