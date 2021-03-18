@@ -1,20 +1,85 @@
-.carousel-item {
+.carousel-custom-img {
     height: 500px;
+    min-width: 100vw;
+    background-position: center;
+
+    &.first {
+        background-image: url("../../../../assets/images/header-la-cura-dei-dettagli.jpg");
+    }
+
+    &.second {
+        background-image: url("../../../../assets/images/header-2.jpg");
+    }
+
+    &.third {
+        background-image: url("../../../../assets/images/yAXgEGYpEeePlWejOjfPIA-9RgIPIMHEeqNw6kAep_FcA.jpeg");
+    }
+
+    &.fourth {
+        background-image: url("../../../../assets/images/Grasse-2-1920x500.jpg");
+    }
 }
 
-// .carousel-wrapper:focus {
-//     outline: none !important;
-// }
+.carousel-inner {
+    width: 100vw;
+}
 
-// .item-active:focus {
-//     outline: none !important
-// }
+.carousel-item {
+    // DISABLE ANIMATIONS FOR WEBSITE SPEED
+    transition: none !important;
+}
 
-// .carousel-inner:focus {
-//     outline: none !important;
-// }
+.carousel-caption {
+    font-weight: 500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
 
-:focus {
-    outline: 0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+.caption-title {
+    font-size: 44px;
+    font-family: 'Montserrat';
+}
+
+.caption-text {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .caption-title {
+        font-size: 40px;
+    }
+    
+    .caption-text {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .caption-title {
+        font-size: 34px;
+    }
+    
+    .caption-text {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .caption-title {
+        font-size: 30px;
+    }
+    
+    .caption-text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .caption-title {
+        font-size: 28px;
+    }
+    
+    .caption-text {
+        font-size: 18px;
+    }
 }

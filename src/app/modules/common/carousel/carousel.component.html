@@ -1,23 +1,46 @@
-<carousel class="carousel-wrapper" [noPause]="false" [isAnimated]="true">
-  <slide>
-    <img src="../../../../assets/images/b08f0941a25c69eba88945dfbc378235.jpg" alt="First slide" style="display: block; width: 100%;">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-block carousel-custom-img first"></div>
+      <div class="carousel-caption">
+        <div class="caption-title">BOIS 1920</div>
+        <div class="caption-text">Историята на едно парфюмно семейство</div>
+      </div>
     </div>
-  </slide>
-  <slide>
-    <img src="../../../../assets/images/jeroen-den-otter-623925-unsplash.jpg" alt="Second slide" style="display: block; width: 100%;">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="carousel-item">
+      <div class="d-block carousel-custom-img second"></div>
+      <div class="carousel-caption">
+        <div class="caption-title">Thibaut Criveli</div>
+        <div class="caption-text">Вдъхновението му за създаване на парфюми</div>
+      </div>
     </div>
-  </slide>
-  <slide>
-    <img src="../../../../assets/images/bottle-bright-care-965992.jpg" alt="Third slide" style="display: block; width: 100%;">
-    <div class="carousel-caption d-none d-md-block">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <div class="carousel-item">
+      <div class="d-block carousel-custom-img third"></div>
+      <div class="carousel-caption">
+        <div class="caption-title">EDEN Perfumes</div>
+        <div class="caption-text">Естествени и веган масла от Великобритания</div>
+      </div>
     </div>
-  </slide>
-</carousel>
+    <div class="carousel-item">
+      <div class="d-block carousel-custom-img fourth"></div>
+      <div class="carousel-caption">
+        <div class="caption-title">Fragonard</div>
+        <div class="caption-text">Как произвеждат своите парфюми</div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
