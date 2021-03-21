@@ -8,9 +8,15 @@
 
 .main-title {
     color: white;
-    font-family: 'Pattaya', sans-serif;
+    font-family: "Pattaya", sans-serif;
     font-size: 60px;
     text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .first-view {
@@ -19,7 +25,7 @@
 }
 
 .second-view {
-    min-height: 400px;
+    min-height: 575px;
     width: 100%;
     // FOR TRANSPARENT BLACK
     // background-color: rgb(0 0 0 / 54%);
@@ -62,23 +68,32 @@
 
     &.first {
         background-image: url("../../../assets/images/fragrance-collection.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &.second {
         background-image: url("../../../assets/images/celine_n.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &.third {
         background-image: url("../../../assets/images/the-difference-between-essential-oils-and-fragrance-oils.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &.fourth {
         background-image: url("../../../assets/images/Feature-Image1-shutterstock.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-.card-button-text {
-    font-family: 'Montserrat';
+.card-button-text,
+.contact-button-text {
+    font-family: "Montserrat";
 }
 
 .card-button {
@@ -86,13 +101,13 @@
     bottom: 0px;
     background-color: #ff4081;
     color: white;
-
     position: absolute;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-transition: color 1000ms;
     transition: color 1000ms;
-    &:before {
+
+    &::before {
         border-radius: 0 0 5px 5px;
         content: "";
         position: absolute;
@@ -104,13 +119,13 @@
         background-color: #ff2771;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-
         -webkit-transition-property: transform;
         transition-property: transform;
         -webkit-transition: 300ms ease-out;
         transition: 300ms ease-out;
     }
-    &:hover:before {
+
+    &:hover::before {
         border-radius: 0 0 5px 5px;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
@@ -119,15 +134,155 @@
 
 .description-list {
     list-style-type: circle;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: italic;
     color: #7b7b7b;
 }
 
 .third-view {
-    min-height: 500px;
+    min-height: 600px;
     width: 100%;
     background-color: #fefefe;
+    overflow: hidden;
+}
+
+.fourth-view {
+    min-height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-wrapper {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(209deg, #ff3179 18%, #ffffff);
+}
+
+.left-contact {
+    position: relative;
+    z-index: 0;
+}
+
+.left-contact::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 400px;
+    right: 0;
+    left: -59px;
+    top: 0px;
+    transform: skewX(-14deg);
+    z-index: -1;
+    background: url("../../../assets/images/Fragrances-Header.jpg");
+    opacity: 0.8;
+}
+
+.left-contact-content-wrapper {
+    width: 45vw;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-top: 9rem;
+}
+
+.left-contact-text {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #696969,  
+    1px -1px 0 #696969,
+    -1px 1px 0 #696969,
+    1px 1px 0 #696969;
+}
+
+.right-arrow-icon {
+    background: url("../../../assets/images/icons/right-arrow.svg");
+    width: 95px;
+    height: 95px;
+    background-size: cover;
+    margin: 0 auto;
+    fill: white;
+}
+
+.right-contact {
+    position: relative;
+    z-index: 0;
+    top: -67%;
+    left: 63%;
+}
+
+.right-contact::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 400px;
+    right: 0;
+    left: 1080px;
+    top: 0px;
+    transform: skewX(-14deg);
+    z-index: -1;
+}
+
+.right-contact-content-wrapper {
+    // ENABLE IF NO MAT-CARD
+    // display: grid;
+}
+
+.contact-card {
+    position: absolute;
+    height: 37vh;
+    width: 26vw;
+    display: grid;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+}
+
+// ENABLE IF NO MAT-CARD
+// .name-input,
+// .email-input,
+// .message-input,
+// .contact-button-wrapper,
+// .contact-button {
+//     width: 23%;
+// }
+
+.contact-button-wrapper {
+    margin-top: 26px;   
+}
+
+.contact-button {
+    background-color: #ff4081;
+    color: white;
+    position: absolute;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: color 1000ms;
+    transition: color 1000ms;
+    width: 93.5%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ff2771;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition: 300ms ease-out;
+        transition: 300ms ease-out;
+    }
+
+    &:hover::before {
+        border-radius: 5px;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
 }
 
 @media only screen and (max-width: 1802px) {
@@ -179,6 +334,12 @@
             margin-left: 1rem;
         }
     }
+
+    .left-contact-content-wrapper {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 8rem;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -211,6 +372,23 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .left-contact-content-wrapper {
+        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-top: 8rem;
+    }
+
+    .left-contact-text {
+        font-size: 30px;
+    }
+
+    .right-arrow-icon {
+        width: 85px;
+        height: 85px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .info-card {
         &.first {
@@ -233,6 +411,51 @@
             margin-bottom: 0;
         }
     }
+
+    .left-contact-content-wrapper {
+        padding-left: 1rem;
+        padding-top: 9rem;
+    }
+
+    .left-contact-text {
+        font-size: 25px;
+    }
+
+    .right-arrow-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 629px) {
+    .left-contact-content-wrapper {
+        padding-top: 10rem;
+    }
+
+    .left-contact-text {
+        font-size: 19px;
+    }
+
+    .right-arrow-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .left-contact-content-wrapper {
+        width: 40vw;
+        padding-right: 2rem;
+    }
+
+    .left-contact-text {
+        font-size: 15px;
+    }
+
+    .right-arrow-icon {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media only screen and (max-width: 351px) {
@@ -242,6 +465,19 @@
 
     .description-list {
         font-size: 14px;
+    }
+
+    .left-contact-content-wrapper {
+        padding-left: 0.5rem;
+    }
+
+    .left-contact-text {
+        font-size: 13px;
+    }
+
+    .right-arrow-icon {
+        width: 35px;
+        height: 35px;
     }
 }
 

@@ -65,6 +65,33 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 30px;
 }
 
+home {
+    .message-input .mat-form-field-outline {
+        height: 120px;
+    }
+
+    .mat-form-field-wrapper {
+        padding-bottom: 0;
+        margin-bottom: -3em !important;
+    }
+
+    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+        color: #ff4081;
+    }
+
+    .mat-focused .mat-form-field-label {
+        color: #ff4081 !important;
+    }
+
+    .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+        color: #ff4081;
+    }
+
+    .mat-input-element {
+        caret-color: #ff4081;
+    }
+}
+
 frag-list {
     // PRIMENG PAGINATOR
     .p-paginator {

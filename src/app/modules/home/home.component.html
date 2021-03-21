@@ -6,11 +6,11 @@
       </div>
     </div>
   </div>
-  <div class="row m-0 second-view pl-4 pr-4 pb-4 pt-3">
+  <div class="row m-0 second-view pl-4 pr-4 pb-5 pt-4 align-items-center">
     <div class="col p-0">
       <div class="row m-0">
         <div class="col d-flex justify-content-center align-items-center">
-          <div class="second-view-title fs-26px mb-3">
+          <div class="second-view-title fs-26px mb-4">
             Научете за:
           </div>
         </div>
@@ -18,7 +18,7 @@
       <div class="row m-0">
         <mat-card class="col-xs-12 col-md-5 col-lg-6 col-xl-2 pb-0 container info-card first">
           <div class="card-img-wrapper">
-            <img mat-card-image class="card-top-img first">
+            <div mat-card-image class="card-top-img first"></div>
           </div>
           <div class="mt-1">
             <ul class="description-list px-4">
@@ -39,7 +39,7 @@
         </mat-card>
         <mat-card class="col-xs-12 col-md-5 col-lg-6 col-xl-2 pb-0 container info-card second">
           <div class="card-img-wrapper">
-            <img mat-card-image class="card-top-img second">
+            <div mat-card-image class="card-top-img second"></div>
           </div>
           <div class="mt-1">
             <ul class="description-list px-4">
@@ -60,7 +60,7 @@
         </mat-card>
         <mat-card class="col-xs-12 col-md-5 col-lg-6 col-xl-2 pb-0 container info-card third">
           <div class="card-img-wrapper">
-            <img mat-card-image class="card-top-img third">
+            <div mat-card-image class="card-top-img third"></div>
           </div>
           <div class="mt-1">
             <ul class="description-list px-4">
@@ -81,7 +81,7 @@
         </mat-card>
         <mat-card class="col-xs-12 col-md-5 col-lg-6 col-xl-2 pb-0 container info-card fourth">
           <div class="card-img-wrapper">
-            <img mat-card-image class="card-top-img fourth">
+            <div mat-card-image class="card-top-img fourth"></div>
           </div>
           <div class="mt-1">
             <ul class="description-list px-4">
@@ -105,5 +105,42 @@
   </div>
   <div class="row m-0 third-view">
     <parfyumi-carousel></parfyumi-carousel>
+  </div>
+  <div class="row m-0 fourth-view">
+    <div class="contact-wrapper">
+      <div class="left-contact">
+        <div class="left-contact-content-wrapper">
+          <div class="left-contact-text">
+            Свържете се с нас за обратна връзка
+          </div>
+          <div class="right-arrow-icon"></div>
+        </div>
+      </div>
+      <div class="right-contact">
+        <div class="right-contact-content-wrapper">
+          <mat-card class="contact-card">
+            <mat-form-field class="name-input" appearance="outline">
+              <mat-label>Име</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="email-input" appearance="outline">
+              <mat-label>Имейл</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="message-input" appearance="outline">
+              <mat-label>Съобщение</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <div class="contact-button-wrapper d-flex align-items-center">
+              <a routerLink="/home">
+                <button mat-flat-button class="contact-button d-flex justify-content-center">
+                  <span class="contact-button-text">Изпрати</span>
+                </button>
+              </a>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
