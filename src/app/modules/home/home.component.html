@@ -106,7 +106,7 @@
   <div class="row m-0 third-view">
     <parfyumi-carousel></parfyumi-carousel>
   </div>
-  <div class="row m-0 fourth-view">
+  <div class="row m-0 fourth-view-desktop">
     <div class="contact-wrapper">
       <div class="left-contact">
         <div class="left-contact-content-wrapper">
@@ -117,8 +117,43 @@
         </div>
       </div>
       <div class="right-contact">
-        <div class="right-contact-content-wrapper">
-          <mat-card class="contact-card">
+        <mat-card class="contact-card">
+          <mat-form-field class="name-input" appearance="outline">
+            <mat-label>Име</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="email-input" appearance="outline">
+            <mat-label>Имейл</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field class="message-input" appearance="outline">
+            <mat-label>Съобщение</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <div class="contact-button-wrapper d-flex align-items-center">
+            <a routerLink="/home">
+              <button mat-flat-button class="contact-button d-flex justify-content-center">
+                <span class="contact-button-text">Изпрати</span>
+              </button>
+            </a>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="fourth-view-mobile">
+    <div class="row m-0 pt-5 align-items-center top-content">
+      <div class="col mt-5">
+        <div class="top-contact-text">
+          Свържете се с нас за обратна връзка
+        </div>
+        <div class="right-arrow-icon-mobile mt-4"></div>
+      </div>
+    </div>
+    <div class="row m-0 align-items-center bottom-content">
+      <div class="col d-flex justify-content-center">
+        <div class="bottom-contact">
+          <mat-card class="contact-card-mobile">
             <mat-form-field class="name-input" appearance="outline">
               <mat-label>Име</mat-label>
               <input matInput>
