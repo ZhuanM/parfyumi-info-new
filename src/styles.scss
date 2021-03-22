@@ -9,6 +9,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 623px !important;
 }
 
+.dropdown-item:active {
+    background-color: #9d9d9dd1;;
+}
+
 .modal-content {
     border-radius: 20px !important;
 }
