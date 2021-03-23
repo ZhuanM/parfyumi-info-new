@@ -1,4 +1,4 @@
-.a-logo {
+.navbar-brand-logo {
     height: 55px;
 }
 
@@ -20,7 +20,7 @@
     z-index: 1030;
 }
 
-.navbar-brand {
+.navbar-brand-text {
     font-family: 'Petit Formal Script', cursive;
     font-size: 25px;
 }
@@ -44,5 +44,11 @@
 
     .transparency {
         background-image: none !important;
+    }
+}
+
+@media only screen and (max-width: 354px) {
+    .navbar-brand-text {
+        font-size: 20px;
     }
 }

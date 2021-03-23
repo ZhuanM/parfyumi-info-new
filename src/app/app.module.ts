@@ -16,6 +16,9 @@ import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { ParfyumiCommonModule } from './modules/common/parfyumi-common.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ParfyumiCarouselComponent } from './modules/common/carousel/carousel.component';
+import { ApiEffects } from './modules/app-state/api.effects';
+import { EffectsModule } from '@ngrx/effects';
+import { reducer } from './modules/app-state/app.reducer';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { ParfyumiCarouselComponent } from './modules/common/carousel/carousel.co
     AppRoutingModule,
     ParfyumiCommonModule,
     FontAwesomeModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({ appState: reducer }),
+    EffectsModule.forRoot([ApiEffects]),
     AppRoutingModule,
   ],
   providers: [],

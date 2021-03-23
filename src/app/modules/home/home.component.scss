@@ -12,10 +12,14 @@
 }
 
 .first-view {
-    min-height: 600px;
+    min-height: 650px;
     width: 100%;
-    background-image: url("../../../assets/images/Nakuna_Avanto_Package 1920x600.jpg");
+    // background-image: url("../../../assets/images/Nakuna_Avanto_Package 1920x600.jpg");
+    background-image: url("../../../assets/images/bgimage.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-title {
@@ -24,12 +28,7 @@
     font-size: 60px;
     text-align: center;
     color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.first-view {
-    // margin-bottom: 250px;
-    // padding-top: 320px;
+    text-shadow: -1px -1px 0 #696969, 1px -1px 0 #696969, -1px 1px 0 #696969, 1px 1px 0 #696969;
 }
 
 .second-view {

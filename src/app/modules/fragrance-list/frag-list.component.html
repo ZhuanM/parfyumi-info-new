@@ -43,7 +43,7 @@
               [fragInfo]="frag" (click)="openModal(frag)"></fragrance>
           </div>
           <div class="paginator-wrapper">
-            <p-paginator [rows]="12" [totalRecords]="filteredFrags.length" 
+            <p-paginator [rows]="12" [totalRecords]="filteredFrags?.length" 
               (onPageChange)="paginate($event)" #paginator></p-paginator>
           </div>
         </div>

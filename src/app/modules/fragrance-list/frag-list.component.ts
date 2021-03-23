@@ -5,6 +5,11 @@ import { Paginator } from 'primeng/paginator';
 import { Fragrance } from '../common/models/fragrance/fragrance';
 import { DesignerOptions, Fragrances, GenderOptions } from 'src/app/utils/constants';
 import { FilterOptions } from '../common/models/filterOptions/filterOptions';
+import { Store } from '@ngrx/store';
+import { getAllFragrances } from '../app-state/selectors';
+import { Observable, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { GetFragrances } from '../app-state/actions';
 
 @Component({
   selector: 'frag-list',
@@ -18,23 +23,38 @@ export class FragListComponent {
   @ViewChild('paginator') paginator: Paginator;
   
   public genderOptions: Array<FilterOptions> = GenderOptions.genderOptions;
-  // public selectedGender: string;
   private genderFilter: string = '';
   
   public designerOptions: Array<FilterOptions> = DesignerOptions.designerOptions;
-  public selectedDesigner: string;
   private designerFilter: string = '';
   
-  public allFragrances: Array<Fragrance> = Fragrances.fragrances;
+  // public allFragrances: Array<Fragrance> = Fragrances.fragrances;
+  public allFragrances: Array<Fragrance>;
+  public allFragrances$: Observable<Array<Fragrance>> = this.store.select(getAllFragrances);
   public filteredFrags: Array<Fragrance>;
   public visibleFrags: Array<Fragrance>;
-  
-  constructor(private modalService: BsModalService) {
 
+  public onDestroySubject: Subject<void> = new Subject();
+
+  constructor(private modalService: BsModalService, private store: Store) {
+    this.store.dispatch(GetFragrances());
+
+    this.allFragrances$.pipe(takeUntil(this.onDestroySubject)).subscribe((allFragrances) => {
+      this.allFragrances = allFragrances;
+      console.log(this.allFragrances);
+
+      this.sortFragrances();
+      this.paginate({ first: 0, rows: 12 });
+    });
   }
-  
-  ngOnInit() {
-    this.filteredFrags = this.allFragrances.sort((frag1, frag2) => {
+
+  ngOnDestroy() {
+    this.onDestroySubject.next();
+    this.onDestroySubject.complete();
+}
+
+  private sortFragrances() {
+    this.filteredFrags = this.allFragrances?.slice().sort((frag1, frag2) => {
       if (frag1.designer < frag2.designer) return -1;
       if (frag1.designer > frag2.designer) return 1;
       
@@ -50,8 +70,6 @@ export class FragListComponent {
       
       return 0;
     });
-
-    this.paginate({ first: 0, rows: 12 });
   }
 
   public openModal(frag: Fragrance){
@@ -66,7 +84,7 @@ export class FragListComponent {
 
   private filterByAll() {
     this.filteredFrags = this.allFragrances;
-    this.filteredFrags = this.filteredFrags.filter(frag => {
+    this.filteredFrags = this.filteredFrags?.filter(frag => {
       if (frag.gender.startsWith(this.genderFilter) && frag.designer.startsWith(this.designerFilter)) {
         return frag;
       }
@@ -86,7 +104,7 @@ export class FragListComponent {
   }
 
   public paginate(event) {
-    this.visibleFrags = this.filteredFrags.slice(event.first, event.first + event.rows);
+    this.visibleFrags = this.filteredFrags?.slice(event.first, event.first + event.rows);
     
     let scrollToTop = window.setInterval(() => {
       let pos = window.pageYOffset;
