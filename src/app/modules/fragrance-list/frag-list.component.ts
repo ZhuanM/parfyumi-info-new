@@ -40,7 +40,9 @@ export class FragListComponent {
     this.store.dispatch(GetFragrances());
 
     this.allFragrances$.pipe(takeUntil(this.onDestroySubject)).subscribe((allFragrances) => {
-      this.allFragrances = allFragrances;
+      if (allFragrances.length > 0) {
+        this.allFragrances = allFragrances;
+      }
 
       this.sortFragrances();
       this.paginate({ first: 0, rows: 12 });
