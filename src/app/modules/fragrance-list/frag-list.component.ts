@@ -41,7 +41,6 @@ export class FragListComponent {
 
     this.allFragrances$.pipe(takeUntil(this.onDestroySubject)).subscribe((allFragrances) => {
       this.allFragrances = allFragrances;
-      console.log(this.allFragrances);
 
       this.sortFragrances();
       this.paginate({ first: 0, rows: 12 });
@@ -51,7 +50,7 @@ export class FragListComponent {
   ngOnDestroy() {
     this.onDestroySubject.next();
     this.onDestroySubject.complete();
-}
+  }
 
   private sortFragrances() {
     this.filteredFrags = this.allFragrances?.slice().sort((frag1, frag2) => {
